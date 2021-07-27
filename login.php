@@ -4,6 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <style>
+      label {
+        display: inline-block;
+        width: 100px;
+        padding: 6px;
+      }
+  
+    </style>
+
     <title>Login Form</title>
   </head>
   <body>
@@ -37,7 +46,7 @@
           $password = $_POST['password'];
         }
         if ($username === "" or $password === "") {
-          $error = "username or password cannot be empty";
+          $error = "username or password can't be empty";
         }
         else {
           if(login($username, $password) == 1) {

@@ -103,22 +103,24 @@ $errorMessage = "Error while saving.";
     <span style="color: red"><?php echo $dobErr; ?></span><br><br>
     <label for="relegion">Relegion<span style="color: red">*</span>:</label>
     <select id = "relegion" name="relegion">
-    <option value="Islam"> Islam </option> 
-    <option value="Hindu"> Hindu </option>
-    <option value="Buddha"> Buddha </option>
-    <option value="Other"> Other </option>   
+    <option id="Islam" value="Islam"> Islam </option> 
+    <option id="Hindu" value="Hindu"> Hindu </option>
+    <option id="Buddha" value="Buddha"> Buddha </option>
+    <option id="Other" value="Other"> Other </option>   
     </select>
-   
 </fieldset>
 
 <fieldset>
    <legend>Contact Information:</legend> 
    <label for="present_adress">Present adress<span style="color: red">*</span>: </label> 
    <input type="text" id="present_adress" name="present_adress"><br><br>
+   <span id="presentAdressErr"></span>
    <label for="parmanent_adress">Present adress<span style="color: red">*</span>: </label> 
    <input type="text" id="parmanent_adress" name="parmanent_adress"><br><br>
+   <span id="parmanentAdressErr"></span>
    <label for ="phone"> Phone</label>
    <input type="tel" id="phone" name="phone" ><br><br>
+   <p id="demo"></p>
    <label for="email">Email<span style="color: red">*</span>:</label>
    <input type="email" id="emailId" name="email">
    <span style="color: red"><?php echo $emailErr; ?></span><br><br>

@@ -28,7 +28,36 @@ function emailValidation(){
         window.alert('Email is empty!'); 
     }
 }
-
+function relegionValidation(){
+    if(document.getElementById("Islam").checked|| document.getElementById("Hindu").checked|| document.getElementById("Buddha").checked|| document.getElementById("Other").checked){
+        alert("Gender Selected"); 
+    }
+    else{  
+        alert("Please Select Gender");
+    }
+}
+function presentadressValidation(){
+    var present_adress =document.forms["mForm"]["present_adress"].value;
+   if(present_adress===""){
+       document.getElementById("presentAdressErr").innerHTML="Field empty";
+       return false;
+   }
+    
+}
+function parmanent_adressValidation(){
+    var parmanent_adress =document.forms["mForm"]["parmanent_adress"].value;
+   if(parmanent_adress===""){
+       document.getElementById("parmanentAdressErr").innerHTML="Field empty";
+       return false;
+   }
+    
+}
+function phoneValidation() {
+    const inpObj = document.getElementById("phone");
+    if (!inpObj.checkValidity()) {
+      document.getElementById("demo").innerHTML = inpObj.validationMessage;
+    }
+  }
 function nameValidation() {
     var data = document.getElementById('username').value;
     if (data === "") { 
