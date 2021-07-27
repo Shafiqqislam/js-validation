@@ -4,21 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <style media="screen">
-      label {
-        display: inline-block;
-        width: 80px;
-        padding: 5px;
-      }
-      button {
-        margin: 5px;
-      }
-      .error {
-        padding-left: 10px;
-        color: red;
-      }
-    </style>
-
     <title>Login Form</title>
   </head>
   <body>
